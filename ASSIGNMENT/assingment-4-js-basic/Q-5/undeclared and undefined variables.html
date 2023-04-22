@@ -1,0 +1,46 @@
+<!--
+    Undefined: It occurs when a variable has been declared but has not been assigned with any value. Undefined is not a keyword.
+
+Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using var or const keyword. If we use ‘typeof’ operator to get the value of an undeclared variable, we will face the runtime error with return value as “undefined”. The scope of the undeclared variables is always global.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <style>
+        h1 {
+            color: grey;
+        }
+    </style>
+  
+    <h1>UNDEFINED OR NOT.</h1>
+  
+    <button onclick="checkVar()">
+      Try it
+  </button>
+  
+    <p id="v"></p>
+  
+    <script>
+        function checkVar() {
+            if (typeof variable === "undefined") {   
+                string = "Variable is undefined";
+            } else {   
+                string = "Variable is defined";
+            }
+            document.getElementById("v").innerHTML = 
+              string;
+        }
+    </script>
+  
+
+</body>
+</html>
