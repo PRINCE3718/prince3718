@@ -1,0 +1,63 @@
+<!--
+    addClass() method: It is used to add specified classes to each of the targeted elements while animating all style changes.
+
+    removeClass() method: It is used to remove the classes from the element while animating all style changes.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+      #btn {
+        padding: 10px 8px;
+        color: black;
+        background-color: rgba(122, 122, 122, 0.322);
+        border-radius: 12px;
+      }
+  
+      .prince {
+        font-size: 40px;
+        color: rgb(6, 86, 93);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 4px #a998c5;
+        letter-spacing: 2px;
+      }
+    </style>
+
+    <!--  JQuery CDN  -->
+    <script src=
+"https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+   </script>
+       
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("h2").addClass("prince", 2000, myCallback);
+        });
+        function myCallback() {
+          setTimeout(function () {
+            $("h2").removeClass("prince");
+          }, 3000);
+        }
+      });
+    </script>
+</head>
+<body>
+    <h2>PRINCE</h2>
+<button id="btn">
+   Click to see the effect</button>
+</body>
+</html>
