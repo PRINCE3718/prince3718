@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+ .text-body-secondary li{
+      text-decoration: none;
+      list-style-type: none;
+ }
+ 
+:root 
+{
+   
+    --p:rgba(120, 116, 116, 0.5);
+
+}
+
+.my{
+    margin-top: 6rem ;
+    margin-bottom: 6rem;
+}
+
+.py{
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+
+
+
+.ford{
+    background-color: var(--p);
+}
+
+
+
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #4a494a 0%,
+    #c8b5dd 29%,
+    #afa1a5 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+
+
+
+
+#loanCalc input{
+  padding:10px;
+  display:block;
+}
+
+.clearfix{
+  clear:both!important;
+}
+
+.paymentCalc{
+  background-color: #f7f7f7;
+  border: 1px solid #d3d3d3;
+  padding: 35px 35px;
+  overflow: auto;
+}
+
+.calcBtn{
+  display:inline-block;
+  background:#c62233;
+  color:#fff;
+  text-align:center;
+  padding:10px 20px;
+  border-radius: 3px;
+}
+
+#paymentResults{
+  display: none;
+  background:#fff;
+  padding: 30px 60px 36px 60px;
+  border:1px solid lightgrey;
+  margin-top:88px;
+}
+
+
+.Contact{
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+
+
+@media  only screen and (min-width:320px) and (max-width:480px){
+
+    .navbar-toggler{
+        margin-left: 30%;
+    }
+    .mustang{
+        display: none !important;
+    } 
+    .Contact{
+      
+      margin-top: 16%;
+    }
+
+}
